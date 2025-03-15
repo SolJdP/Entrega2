@@ -1,0 +1,27 @@
+/*heros*/
+@mixin hero-style($img) {
+    background-image: $hero-img, url($img);
+    height: $hero-height;
+    background-size: $hero-size;
+    background-position: $hero-position;;
+}
+
+@mixin flex($direction, $justify, $align, $gap) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+}
+@mixin texto($align, $padding, $color, $font){
+    text-align: $align;
+    padding: $padding;
+    color: $color;
+    font-family: $font;
+}
+
+@mixin responsive($max-width) {
+    @media (max-width: $max-width) {
+        @content;
+    }
+}

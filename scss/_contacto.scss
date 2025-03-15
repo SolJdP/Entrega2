@@ -1,0 +1,46 @@
+.info-contacto{
+    padding: 20px;
+    color: $text-color;
+    @include responsive(768px){
+        font-size: small;
+    }
+    h2{
+        color: $secondary-color;
+    }
+    ul{
+        list-style-type: circle;
+        color: $text-color;
+    }
+    a{
+        text-decoration: none;
+        color: $secondary-color;
+    }
+}
+
+.formulario{
+    width: 20%;
+    margin-left: 20px;
+    @include responsive(768px){
+        width: 50%;
+    }
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    label{
+        font-weight: bold;
+        color: $text-color;
+    }
+    input{
+        border: groove 2px $secondary-color;
+    }
+    textarea{
+        border: groove 2px $secondary-color;
+    }
+}
+
+.pie-contacto{
+    @include texto(center, 20px, $text-color, $font-family);
+    margin-top: 60px;
+}

@@ -1,0 +1,105 @@
+.menu-texto {
+    text-align: center;
+    padding: 25px;
+    color: $text-color;
+    @include responsive(768px){
+        padding: 10px;
+    }
+
+    h2 {
+        color: $secondary-color;
+    }
+    @include responsive(768px){
+        font-size: 23px;
+    }
+}
+
+.menu-cafe{
+    display: flex;
+    width: 80%;
+    margin-left: 20px;
+    margin-right: auto;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 50px;
+    border: solid 1px $secondary-color;
+
+    @include responsive(1024px) {
+        padding: 20px;
+        font-size: 23px;
+    }
+    @include responsive(768px){
+        width: 90%;
+        padding: 10px;
+        font-size: medium;
+        gap: 10px;
+    }
+
+    img {
+        width: 60%;
+        border-radius: 2%;
+        box-shadow: 0 5px 8px 0 grey;
+    }
+
+    ul {
+        list-style: circle;
+        color: $text-color;
+    }
+}
+
+.menu-pastry{
+        display: flex;
+        width: 80%;
+        margin-left: auto;
+        margin-right: 20px;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        font-size: 30px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 50px;
+        border: solid 1px $secondary-color;
+
+    @include responsive(1024px) {
+        padding: 20px;
+        font-size: 20px;
+    }
+    @include responsive(768px){
+            width: 90%;
+            padding: 10px;
+            font-size: medium;
+            gap: 10px;
+    }
+
+    img {
+        width: 60%;
+        border-radius: 2%;
+        box-shadow: 0 5px 8px 0 grey;
+
+        @include responsive (1024px) {
+            width: 55%;
+        }
+        @include responsive(768px){
+            width: 50%;
+        }
+
+    }
+
+    ul {
+        list-style: circle;
+        color: $text-color;
+    }
+
+}
+.pie-texto {
+    @include texto(center, 30px, $text-color, $font-family);
+    font-size: large;
+    @include responsive(768px){
+        font-size: medium;
+    }
+}

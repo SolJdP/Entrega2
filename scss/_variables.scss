@@ -1,0 +1,18 @@
+$body-color: #FAF9F6;
+$secondary-color: #D2691E;
+$navbar-color: #8AA7A9;
+$text-color: #555555;
+$menu-color: #FFFFFF;
+$font-family: "Montserrat", sans-serif;
+
+/*heros*/
+$hero-height: 500px;
+$hero-img: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+$hero-size: cover;
+$hero-position: center;
+
+/*body*/
+body{
+    background-color: $body-color;
+    font-family: $font-family;
+}

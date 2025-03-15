@@ -1,0 +1,81 @@
+.nosotros {
+    @include texto(center, 40px, $text-color, $font-family);
+    width: 60%;
+    margin: 30px auto;
+    font-size: large;
+    border: solid 1px $secondary-color;
+}
+
+.historia-cafe {
+    @include texto(center, 20px, $text-color, $font-family);
+    margin-bottom: 30px;
+
+    h2 {
+        color: $secondary-color;
+    }
+}
+
+.historia {
+    @include flex(row, center, center, 30px);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    padding: 10px;
+    color: $text-color;
+
+    img {
+        width: 50%;
+        filter: brightness(80%);
+        border-radius: 2%;
+    }
+
+    @include responsive(768px) {
+            padding: 10px;
+            flex-direction: column-reverse;
+            gap: 20px;
+    }
+}
+
+.sobre-productos {
+    @include texto(center, 30px, $text-color, $font-family);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    h2 {
+        color: $text-color;
+    }
+
+    @include responsive(768px) {
+            padding: 10px;
+            width: 90%;
+    }
+}
+
+.carousel {
+    width: 50%;
+}
+
+.carousel-inner {
+    img {
+        height: 400px;
+    }
+
+    @include responsive(1024px) {
+                height: auto;}
+    }
+
+.visitanos {
+    @include texto(center, 0px, $text-color, $font-family);
+    width: 90%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: large;
+}

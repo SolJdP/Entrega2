@@ -1,0 +1,37 @@
+.hero {
+    @include hero-style("../imagenes/cafe-entrada.jpg");
+}
+
+.hero-texto {
+    text-align: center;
+    color: $secondary-color;
+}
+
+.hero-nosotros {
+    @include hero-style("../imagenes/barra.jpg");
+
+    h1 {
+        padding: 20px;
+    }
+}
+
+.hero-menu {
+    @include hero-style("../imagenes/mesa-menu.jpg");
+}
+
+.hero-contacto {
+    @include hero-style("../imagenes/mesa-cafe.jpg");
+    text-align: center;
+    color: $secondary-color;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 30%;
+    }
+}
+.hero-texto {
+    h4 {
+        font-size: 15px;
+    }
+} 

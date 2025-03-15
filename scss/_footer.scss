@@ -1,0 +1,55 @@
+footer {
+    @include flex(column, center, center, 0px);
+    background-color: $navbar-color;
+    color: $menu-color;
+    padding: 20px;
+    font-family: $font-family;
+    margin-top: auto;
+
+    a {
+        text-decoration: none;
+        color: $menu-color;
+    }
+
+    ul {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        padding: 0;
+    }
+
+    li {
+        padding: 5px;
+    }
+
+    p {
+        font-style: italic;
+        text-align: center;
+        font-size: small;
+        padding-top: 30px;
+    }
+}
+
+.info-menu-footer {
+    @include responsive(768px) {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+.info-footer {
+    @include responsive(768px) {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.menu-footer {
+    @include responsive(768px) {
+        display: flex;
+        flex-direction: row;
+        font-size: small;
+    }
+}
