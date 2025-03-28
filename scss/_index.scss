@@ -36,7 +36,7 @@
 }
 
 /*categorias*/
-.categorias{
+.categorias {
     width: 90%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -65,6 +65,11 @@
     .categoria-bakery,
     .categoria-ceramica {
         box-shadow: 0 4px 8px 0 grey;
+
+        &:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transform: translateY(-5px);
+        }
     }
 
     @include responsive(1024px) {

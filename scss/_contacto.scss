@@ -1,46 +1,62 @@
-.info-contacto{
+.info-contacto {
     padding: 20px;
     color: $text-color;
-    @include responsive(768px){
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+
+    @include responsive(768px) {
         font-size: small;
+        width: 90%;
     }
-    h2{
+
+    h2 {
         color: $secondary-color;
     }
-    ul{
+
+    ul {
         list-style-type: circle;
         color: $text-color;
     }
-    a{
+
+    a {
         text-decoration: none;
         color: $secondary-color;
+        padding: 20px;
     }
 }
 
-.formulario{
+
+.formulario {
     width: 20%;
-    margin-left: 20px;
-    @include responsive(768px){
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+
+    @include responsive(768px) {
         width: 50%;
     }
 }
 
-form{
+form {
     display: flex;
     flex-direction: column;
-    label{
+
+    label {
         font-weight: bold;
         color: $text-color;
     }
-    input{
+
+    input {
         border: groove 2px $secondary-color;
     }
-    textarea{
+
+    textarea {
         border: groove 2px $secondary-color;
     }
 }
 
-.pie-contacto{
+.pie-contacto {
     @include texto(center, 20px, $text-color, $font-family);
     margin-top: 60px;
 }

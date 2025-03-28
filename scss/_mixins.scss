@@ -3,7 +3,8 @@
     background-image: $hero-img, url($img);
     height: $hero-height;
     background-size: $hero-size;
-    background-position: $hero-position;;
+    background-position: $hero-position;
+    ;
 }
 
 @mixin flex($direction, $justify, $align, $gap) {
@@ -13,7 +14,8 @@
     align-items: $align;
     gap: $gap;
 }
-@mixin texto($align, $padding, $color, $font){
+
+@mixin texto($align, $padding, $color, $font) {
     text-align: $align;
     padding: $padding;
     color: $color;

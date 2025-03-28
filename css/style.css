@@ -16,14 +16,14 @@ body {
 
 body h1 {
   text-align: center;
-  color: #D2691E;
+  color: #8B5E3B;
   font-size: 50px;
   font-family: "Montserrat", sans-serif;
 }
 
 /*heros*/
 .hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imagenes/cafe-entrada.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imagenes/cafe-interior3.jpg");
   height: 500px;
   background-size: cover;
   background-position: center;
@@ -31,17 +31,19 @@ body h1 {
 
 .hero-texto {
   text-align: center;
-  color: #D2691E;
+  color: #8B5E3B;
+  padding-top: 100px;
 }
 
 .hero-nosotros {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imagenes/barra.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imagenes/interior-de-cafe.jpg");
   height: 500px;
   background-size: cover;
   background-position: center;
 }
 .hero-nosotros h1 {
   padding: 20px;
+  padding-top: 100px;
 }
 
 .hero-menu {
@@ -52,12 +54,15 @@ body h1 {
 }
 
 .hero-contacto {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imagenes/mesa-cafe.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imagenes/libros-taza.jpg");
   height: 500px;
   background-size: cover;
   background-position: center;
   text-align: center;
-  color: #D2691E;
+  color: #8B5E3B;
+}
+.hero-contacto p {
+  font-weight: bold;
 }
 
 @media (max-width: 768px) {
@@ -80,7 +85,7 @@ body h1 {
   margin: 60px auto;
   text-align: center;
   font-size: 20px;
-  border: 3px solid #D2691E;
+  border: 3px solid #8B5E3B;
 }
 @media (max-width: 1024px) {
   .sobre-cafe {
@@ -130,7 +135,7 @@ body h1 {
   font-family: "Montserrat", sans-serif;
 }
 .categorias h3 {
-  color: #D2691E;
+  color: #8B5E3B;
   font-weight: bold;
 }
 .categorias img {
@@ -141,6 +146,12 @@ body h1 {
 .categorias .categoria-bakery,
 .categorias .categoria-ceramica {
   box-shadow: 0 4px 8px 0 grey;
+}
+.categorias .categoria-cafe:hover,
+.categorias .categoria-bakery:hover,
+.categorias .categoria-ceramica:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
 }
 @media (max-width: 1024px) {
   .categorias {
@@ -181,7 +192,7 @@ body h1 {
   }
 }
 .menu-texto h2 {
-  color: #D2691E;
+  color: #8B5E3B;
 }
 @media (max-width: 768px) {
   .menu-texto {
@@ -201,7 +212,7 @@ body h1 {
   margin-top: 30px;
   margin-bottom: 30px;
   padding: 50px;
-  border: solid 1px #D2691E;
+  border: solid 1px #8B5E3B;
 }
 @media (max-width: 1024px) {
   .menu-cafe {
@@ -239,7 +250,7 @@ body h1 {
   margin-top: 30px;
   margin-bottom: 30px;
   padding: 50px;
-  border: solid 1px #D2691E;
+  border: solid 1px #8B5E3B;
 }
 @media (max-width: 1024px) {
   .menu-pastry {
@@ -296,7 +307,7 @@ body h1 {
   width: 60%;
   margin: 30px auto;
   font-size: large;
-  border: solid 1px #D2691E;
+  border: solid 1px #8B5E3B;
 }
 
 .historia-cafe {
@@ -307,7 +318,7 @@ body h1 {
   margin-bottom: 30px;
 }
 .historia-cafe h2 {
-  color: #D2691E;
+  color: #8B5E3B;
 }
 
 .historia {
@@ -333,6 +344,9 @@ body h1 {
     padding: 10px;
     flex-direction: column-reverse;
     gap: 20px;
+  }
+  .historia img {
+    width: 80%;
   }
 }
 
@@ -362,6 +376,11 @@ body h1 {
 .carousel {
   width: 50%;
 }
+@media (max-width: 768px) {
+  .carousel {
+    width: 90%;
+  }
+}
 
 .carousel-inner img {
   height: 400px;
@@ -369,6 +388,11 @@ body h1 {
 @media (max-width: 1024px) {
   .carousel-inner {
     height: auto;
+  }
+}
+@media (max-width: 768px) {
+  .carousel-inner {
+    height: 350px;
   }
 }
 
@@ -450,6 +474,11 @@ body h1 {
 .item-producto img {
   width: 100%;
   height: 200px;
+  filter: brightness(50%);
+  transition: filter 0.3s ease-in-out;
+}
+.item-producto img:hover {
+  filter: brightness(100%);
 }
 @media (max-width: 768px) {
   .item-producto img {
@@ -460,14 +489,18 @@ body h1 {
 .info-contacto {
   padding: 20px;
   color: #555555;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
 }
 @media (max-width: 768px) {
   .info-contacto {
     font-size: small;
+    width: 90%;
   }
 }
 .info-contacto h2 {
-  color: #D2691E;
+  color: #8B5E3B;
 }
 .info-contacto ul {
   list-style-type: circle;
@@ -475,12 +508,15 @@ body h1 {
 }
 .info-contacto a {
   text-decoration: none;
-  color: #D2691E;
+  color: #8B5E3B;
+  padding: 20px;
 }
 
 .formulario {
   width: 20%;
-  margin-left: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
 }
 @media (max-width: 768px) {
   .formulario {
@@ -497,10 +533,10 @@ form label {
   color: #555555;
 }
 form input {
-  border: groove 2px #D2691E;
+  border: groove 2px #8B5E3B;
 }
 form textarea {
-  border: groove 2px #D2691E;
+  border: groove 2px #8B5E3B;
 }
 
 .pie-contacto {
@@ -526,6 +562,7 @@ footer {
 footer a {
   text-decoration: none;
   color: #FFFFFF;
+  padding: 20px;
 }
 footer ul {
   display: flex;

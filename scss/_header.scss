@@ -1,13 +1,15 @@
-.navbar{
+.navbar {
     background-color: $navbar-color;
     color: $menu-color;
     font-family: $font-family;
-    a{
+
+    a {
         color: $menu-color;
     }
 }
-body{
-    h1{
+
+body {
+    h1 {
         text-align: center;
         color: $secondary-color;
         font-size: 50px;
